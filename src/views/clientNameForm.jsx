@@ -215,8 +215,6 @@ class ClientNameForm extends React.Component {
 
     constructor(props) {
         super(props);
-        // не отправляю в запросе по просьбе заказчика
-        this.sitekey = '6LdlIe8UAAAAAFVrjDPWvOkQlZ4YHGbqvTRM5QpR'// ключ капчи. Получить его можно тут https://www.google.com/recaptcha/admin/create
     }
 
     onSubmit = () => {
@@ -227,10 +225,11 @@ class ClientNameForm extends React.Component {
     };
 
     // отработает после проверки капчи
-    onResolved = () => {
+    onResolved = (token) => {
         this.recaptcha.reset();
         // запрос аякс
-        clientNameStore.submitForm();
+        // когда
+        clientNameStore.submitForm(token);
     };
 
     getForm = () => {

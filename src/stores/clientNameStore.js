@@ -111,8 +111,9 @@ class ClientNameStore {
         return validation;
     };
 
-    submitForm = () => {
+    submitForm = (token = '') => {
         let formData = new FormData();
+        formData.append('captchaToken', token);
         for (let property in this.form) {
             formData.append(this.form[property].bdName, this.form[property].value)
         }
