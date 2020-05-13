@@ -1,0 +1,38 @@
+body {
+  width: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: Roboto,sans-serif;
+  color: #fff;
+  display: block;
+  background-image: url(img/img-bg.png);
+}
+
+#app {
+
+}
+
+.common_form {
+  color: white;
+
+  .title {
+    font-size: 52px;
+    line-height: 61px;
+    margin-bottom: 10px;
+  }
+}
+
+.dataPickerBorderError {
+  & .MuiInput-underline:before {
+    border-bottom: 2px solid red !important;
+  }
+
+  & .MuiInput-underline:after {
+    border-bottom: 2px solid red !important;
+  }
+}
