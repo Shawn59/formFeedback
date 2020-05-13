@@ -215,6 +215,7 @@ class ClientNameForm extends React.Component {
 
     constructor(props) {
         super(props);
+        // не отправляю в запросе по просьбе заказчика
         this.sitekey = '6LdlIe8UAAAAAFVrjDPWvOkQlZ4YHGbqvTRM5QpR'// ключ капчи. Получить его можно тут https://www.google.com/recaptcha/admin/create
     }
 
