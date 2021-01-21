@@ -1,4 +1,4 @@
-стек: js, react js, mobx, css
+стек: `js, react js, mobx, scss`
 
 Формы для клиентов
 
